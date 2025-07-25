@@ -1,0 +1,14 @@
+def twosumtwo(nums,target):
+  l=0
+  r=len(nums)-1
+
+  while l<r:
+    if (nums[l]+nums[r]>target):
+      r-=1
+    if(nums[l]+nums[r]<target):
+      l+=1
+    else:
+      return [l+1,r+1]  #start at one
+    
+print(twosumtwo([1,2,3,4,6,8,10],10))
+  
