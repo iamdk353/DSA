@@ -6,7 +6,7 @@ def threeSum(nums):
   for i in range(n):
     if (nums[i] > 0):
       break
-    if (nums[i]==nums[i-1]):
+    if (nums[i]==nums[i-1]):  
       continue
     low=i+1
     high=n-1
