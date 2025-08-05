@@ -1,10 +1,5 @@
 def isSubset(a,b):
- 
-  if len(a) < len(b):
-    GlobSet=set(a)
-  else : 
-    GlobSet=set(b)
-  
+  GlobSet=set(a)
   for i in b:
     if i not in GlobSet:
       return False
