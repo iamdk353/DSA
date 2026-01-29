@@ -12,10 +12,8 @@ class Solution:
             
             if(height[low]<height[high]):
                 low+=1
-            elif(height[low]>height[high]):
-                high-=1
             else:
-                low+=1
+                high-=1
 
         return maxArea
 
